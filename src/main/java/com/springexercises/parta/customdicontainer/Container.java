@@ -1,4 +1,4 @@
-package com.springexercises.customdic;
+package com.springexercises.parta.customdicontainer;
 
 import java.lang.reflect.Constructor;
 import java.util.HashMap;

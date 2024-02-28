@@ -1,9 +1,9 @@
-package com.springexercises.conditionalbeanconfig;
+package com.springexercises.parta.conditionaldi;
 
-import com.springexercises.model.Database;
-import com.springexercises.model.MockDatabase;
-import com.springexercises.model.MySQLDatabase;
-import com.springexercises.model.UserRepository;
+import com.springexercises.parta.model.Database;
+import com.springexercises.parta.model.MockDatabase;
+import com.springexercises.parta.model.MySQLDatabase;
+import com.springexercises.parta.model.UserRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;

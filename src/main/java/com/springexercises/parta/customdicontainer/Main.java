@@ -1,8 +1,8 @@
-package com.springexercises.customdic;
+package com.springexercises.parta.customdicontainer;
 
-import com.springexercises.model.Database;
-import com.springexercises.model.MySQLDatabase;
-import com.springexercises.model.UserRepository;
+import com.springexercises.parta.model.Database;
+import com.springexercises.parta.model.MySQLDatabase;
+import com.springexercises.parta.model.UserRepository;
 
 public class Main {
     private static final Container container = new Container();

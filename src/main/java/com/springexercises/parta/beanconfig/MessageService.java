@@ -1,4 +1,4 @@
-package com.springexercises.beanconfig;
+package com.springexercises.parta.beanconfig;
 
 public class MessageService {
     private String message = "Message from MessageService";

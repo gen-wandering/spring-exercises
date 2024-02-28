@@ -1,4 +1,4 @@
-package com.springexercises.beanconfig;
+package com.springexercises.parta.beanconfig;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.springexercises.model;
+package com.springexercises.parta.model;
 
 public class MySQLDatabase implements Database {
     @Override

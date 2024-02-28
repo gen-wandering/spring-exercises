@@ -1,6 +1,6 @@
-package com.springexercises.model;
+package com.springexercises.parta.model;
 
-import com.springexercises.customdic.AddDependency;
+import com.springexercises.parta.customdicontainer.AddDependency;
 
 public class UserRepository {
     private Database db;

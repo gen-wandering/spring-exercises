@@ -1,4 +1,4 @@
-package com.springexercises.beanconfig;
+package com.springexercises.parta.beanconfig;
 
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -16,12 +16,12 @@ public class Application {
 
     // ClassPathXmlApplicationContext to load the XML-based configuration
     private static BeanFactory xmlConfig() {
-        return new ClassPathXmlApplicationContext("beanconfig/applicationContext.xml");
+        return new ClassPathXmlApplicationContext("parta/beanconfig/applicationContext.xml");
     }
 
     // FileSystemXmlApplicationContext to load the XML-based configuration from an external file
     private static BeanFactory xmlConfigFromExternalFile() {
-        String someExternalFile = "src/main/java/com/springexercises/beanconfig/externalAppContext.xml";
+        String someExternalFile = "src/main/java/com/springexercises/parta/beanconfig/externalAppContext.xml";
         return new FileSystemXmlApplicationContext(someExternalFile);
     }
 
@@ -32,6 +32,6 @@ public class Application {
 
     // ClassPathXmlApplicationContext for mix of XML and Java configuration
     private static BeanFactory mixConfig() {
-        return new ClassPathXmlApplicationContext("beanconfig/mixedAppContext.xml");
+        return new ClassPathXmlApplicationContext("parta/beanconfig/mixedAppContext.xml");
     }
 }

@@ -1,6 +1,6 @@
-package com.springexercises.conditionalbeanconfig;
+package com.springexercises.parta.conditionaldi;
 
-import com.springexercises.model.UserRepository;
+import com.springexercises.parta.model.UserRepository;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
