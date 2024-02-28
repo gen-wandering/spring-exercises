@@ -8,6 +8,7 @@ public class Main {
         var context = new AnnotationConfigApplicationContext();
 
         context.getEnvironment().setActiveProfiles("production");
+        // context.getEnvironment().setActiveProfiles("test");
         context.register(AppConfig.class);
         context.refresh();
 

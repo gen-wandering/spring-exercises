@@ -1,4 +1,4 @@
-package com.springexercises.conditiondi;
+package com.springexercises.conditionalbeanconfig;
 
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;
