@@ -5,7 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
-public class Application {
+public class BeanConfigMain {
     public static void main(String[] args) {
 
         BeanFactory beanFactory = mixConfig();

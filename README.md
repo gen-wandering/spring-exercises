@@ -11,3 +11,7 @@
   with various bean configurations.
 
 ### Second part ([`partb`](src/main/java/com/springexercises/partb))
+
+* **Alias conflict resolution (`aliasconflict`)**\
+  empty
+* 
