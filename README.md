@@ -32,9 +32,11 @@
 * **Nested dependencies with qualifiers (**[`qualifiersdi`](src/main/java/com/springexercises/partb/qualifiersdi)**)**\
   Using `@Qualifier` to specify which dependency should be injected into the bean.<br/><br/>
 
-* **Caching aspect (**[`cachingaspect`](src/main/java/com/springexercises/partb/cachingaspect)**)**\
+* **Caching aspect and proxy-based peculiarities (**[`cachingaspect`](src/main/java/com/springexercises/partb/cachingaspect)**)**\
   Implementation of a caching aspect with Spring AOP. Aspect caches method results
-  based on specific conditions or annotations.<br/><br/>
+  based on specific conditions or annotations.\
+  Also demonstrates some interesting points regarding the fact that Spring AOP is
+  proxy-based.<br/><br/>
 
 * **Validation aspect (**[`validationaspect`](src/main/java/com/springexercises/partb/validationaspect)**)**\
   Implementation of a validation aspect using Spring AOP. Aspect intercepts method

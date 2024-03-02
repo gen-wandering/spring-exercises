@@ -41,6 +41,20 @@ public class Person {
         return "Person " + LocalDateTime.now();
     }
 
+    public void selfInvocation() {
+        /*
+         * Self-invocations are not going to be invoked
+         * against the proxy.
+         *
+         * So "this.getAge()" won't be processed by CachingAspect.
+         * */
+        this.getAge(); // self-invocation
+        System.out.println("in person.selfInvocation()");
+    }
+
+    public void proxyAndTargetObjectMethodCalls() {
+    }
+
     @Override
     public String toString() {
         return "Person{" +

@@ -21,4 +21,9 @@ public class AppConfig {
     public CachingAspect cachingAspect() {
         return new CachingAspect();
     }
+
+    @Bean
+    public ProxyInterestingPointsAspect proxyInterestingPointsAspect() {
+        return new ProxyInterestingPointsAspect();
+    }
 }
