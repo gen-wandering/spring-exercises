@@ -29,12 +29,12 @@
   Shows how lazy loading works in conjunction with dependency injection, all lazy
   bean dependencies are resolved only when needed.<br/><br/>
 
-* **Nested Dependencies with Qualifiers (**[`qualifiersdi`](src/main/java/com/springexercises/partb/qualifiersdi)**)**\
+* **Nested dependencies with qualifiers (**[`qualifiersdi`](src/main/java/com/springexercises/partb/qualifiersdi)**)**\
   Using `@Qualifier` to specify which dependency should be injected into the bean.<br/><br/>
 
-* **Caching Aspect (**[`cachingaspect`](src/main/java/com/springexercises/partb/cachingaspect)**)**\
+* **Caching aspect (**[`cachingaspect`](src/main/java/com/springexercises/partb/cachingaspect)**)**\
   Implementation of a caching aspect with Spring AOP. Aspect caches method results
   based on specific conditions.<br/><br/>
 
-* **Validation Aspect**\
+* **Validation aspect**\
   ...
