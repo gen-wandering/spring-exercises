@@ -36,5 +36,6 @@
   Implementation of a caching aspect with Spring AOP. Aspect caches method results
   based on specific conditions or annotations.<br/><br/>
 
-* **Validation aspect**\
-  ...
+* **Validation aspect (**[`validationaspect`](src/main/java/com/springexercises/partb/validationaspect)**)**\
+  Implementation of a validation aspect using Spring AOP. Aspect intercepts method
+  call and validates input parameters against predefined rules. 
