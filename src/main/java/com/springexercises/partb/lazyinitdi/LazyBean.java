@@ -1,4 +1,4 @@
-package com.springexercises.partb.lazyinit;
+package com.springexercises.partb.lazyinitdi;
 
 import org.springframework.beans.factory.annotation.Autowired;
 

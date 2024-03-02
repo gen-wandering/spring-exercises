@@ -1,4 +1,4 @@
-package com.springexercises.partb.lazyinit;
+package com.springexercises.partb.lazyinitdi;
 
 public class LazyBeanDependency {
 

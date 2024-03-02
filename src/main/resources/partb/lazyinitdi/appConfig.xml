@@ -7,7 +7,7 @@
 
     <context:annotation-config/>
 
-    <bean id="eagerBean" class="com.springexercises.partb.lazyinit.EagerBean"/>
-    <bean id="lazyBean" class="com.springexercises.partb.lazyinit.LazyBean" lazy-init="true"/>
-    <bean id="lazyBeanDependency" class="com.springexercises.partb.lazyinit.LazyBeanDependency"/>
+    <bean id="eagerBean" class="com.springexercises.partb.lazyinitdi.EagerBean"/>
+    <bean id="lazyBean" class="com.springexercises.partb.lazyinitdi.LazyBean" lazy-init="true"/>
+    <bean id="lazyBeanDependency" class="com.springexercises.partb.lazyinitdi.LazyBeanDependency"/>
 </beans>
