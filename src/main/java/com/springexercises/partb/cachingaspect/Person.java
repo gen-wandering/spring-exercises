@@ -1,5 +1,7 @@
 package com.springexercises.partb.cachingaspect;
 
+import java.time.LocalDateTime;
+
 public class Person {
     private int id;
     private int age;
@@ -31,6 +33,12 @@ public class Person {
     public String getSurname() {
         System.out.println("in person.getSurname()");
         return surname;
+    }
+
+    @Track
+    public String specialMethod() {
+        System.out.println("in person.specialMethod()");
+        return "Person " + LocalDateTime.now();
     }
 
     @Override

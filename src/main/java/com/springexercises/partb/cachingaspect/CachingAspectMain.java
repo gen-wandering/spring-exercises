@@ -3,7 +3,7 @@ package com.springexercises.partb.cachingaspect;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class Main {
+public class CachingAspectMain {
     public static void main(String[] args) {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
@@ -13,6 +13,7 @@ public class Main {
         person.getId();
         person.getAge();
         person.getSurname();
+        person.specialMethod();
 
         var cache = context.getBean("cachingAspect", CachingAspect.class).getCache();
 

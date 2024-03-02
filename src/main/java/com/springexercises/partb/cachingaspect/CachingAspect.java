@@ -16,20 +16,29 @@ public class CachingAspect {
     }
 
     @AfterReturning(
-            pointcut = "com.springexercises.partb.cachingaspect.Pointcuts.localIntReturnMethods()",
+            pointcut = "com.springexercises.partb.cachingaspect.Pointcuts.localGetMethods()",
             returning = "retVal"
     )
-    public void cacheIntReturnValue(JoinPoint joinPoint, Object retVal) {
+    public void cacheIntReturnValue(JoinPoint joinPoint, Integer retVal) {
         cache.put(joinPoint.getSignature().toString(), retVal);
         System.out.println("CachingAspect[cacheIntReturnValue advise]: " + retVal);
     }
 
     @AfterReturning(
-            pointcut = "com.springexercises.partb.cachingaspect.Pointcuts.localStringReturnMethods()",
+            pointcut = "com.springexercises.partb.cachingaspect.Pointcuts.localGetMethods()",
             returning = "retVal"
     )
-    public void cacheStringReturnValue(JoinPoint joinPoint, Object retVal) {
+    public void cacheStringReturnValue(JoinPoint joinPoint, String retVal) {
         cache.put(joinPoint.getSignature().toString(), retVal);
         System.out.println("CachingAspect[cacheStringReturnValue advise]: " + retVal);
+    }
+
+    @AfterReturning(
+            pointcut = "com.springexercises.partb.cachingaspect.Pointcuts.specialMethods()",
+            returning = "retVal"
+    )
+    public void specialMethodsReturnValue(JoinPoint joinPoint, String retVal) {
+        cache.put(joinPoint.getSignature().toString(), retVal);
+        System.out.println("CachingAspect[specialMethodsReturnValue advise]: " + retVal);
     }
 }

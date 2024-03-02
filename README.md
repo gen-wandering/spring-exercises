@@ -34,7 +34,7 @@
 
 * **Caching aspect (**[`cachingaspect`](src/main/java/com/springexercises/partb/cachingaspect)**)**\
   Implementation of a caching aspect with Spring AOP. Aspect caches method results
-  based on specific conditions.<br/><br/>
+  based on specific conditions or annotations.<br/><br/>
 
 * **Validation aspect**\
   ...
