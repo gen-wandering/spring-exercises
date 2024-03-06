@@ -14,8 +14,9 @@
 
 ## Second part
 
-* **Alias conflict resolution**\
-  ...<br/><br/>
+* **Alias redefinition (**[`aliasredefinition`](src/main/java/com/springexercises/partb/aliasredefinition)**)**\
+  Implementation of a scenario in which beans with the same aliases are added to the 
+  IoC container.<br/><br/>
 
 * **Using aliases for DI (**[`aliasesdi`](src/main/resources/partb/aliasesdi)**)**\
   Demonstrates how bean aliases can be used to inject dependencies into other beans.

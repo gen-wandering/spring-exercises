@@ -1,4 +1,4 @@
-package com.springexercises.partb.questions.aliasconflict.model;
+package com.springexercises.partb.aliasredefinition.model;
 
 public abstract class Person {
     protected int age;

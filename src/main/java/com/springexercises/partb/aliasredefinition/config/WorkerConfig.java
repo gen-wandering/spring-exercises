@@ -1,6 +1,6 @@
-package com.springexercises.partb.questions.aliasconflict.config;
+package com.springexercises.partb.aliasredefinition.config;
 
-import com.springexercises.partb.questions.aliasconflict.model.Worker;
+import com.springexercises.partb.aliasredefinition.model.Worker;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

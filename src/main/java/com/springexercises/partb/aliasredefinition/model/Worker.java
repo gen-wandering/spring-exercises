@@ -1,4 +1,4 @@
-package com.springexercises.partb.questions.aliasconflict.model;
+package com.springexercises.partb.aliasredefinition.model;
 
 public class Worker extends Person {
     private final int salary;
