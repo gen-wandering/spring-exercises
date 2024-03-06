@@ -1,4 +1,4 @@
-package com.springexercises.partb.cyclicdependency;
+package com.springexercises.partb.cyclicdependency.setterresolution;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

@@ -1,8 +1,8 @@
-package com.springexercises.partb.cyclicdependency;
+package com.springexercises.partb.cyclicdependency.setterresolution;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class CyclicDependencyMain {
+public class SetterCDResolutionMain {
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(AppConfig.class);
 

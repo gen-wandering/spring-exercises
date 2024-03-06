@@ -22,9 +22,9 @@
   Demonstrates how bean aliases can be used to inject dependencies into other beans.
   <br/><br/>
 
-* **Cyclic dependency detection (**[`cyclicdependency`](src/main/java/com/springexercises/partb/cyclicdependency)**)**\
-  Using `depends-on` attribute to resolve cyclic dependency and ensure proper
-  initialization order.<br/><br/>
+* **Cyclic dependency resolution (**[`cyclicdependency`](src/main/java/com/springexercises/partb/cyclicdependency)**)**\
+  Demonstrates two strategies for resolving circular dependency: using setters for 
+  DI and `@Lazy` for constructor DI.<br/><br/>
 
 * **Lazy loading with DI (**[`lazyinitdi`](src/main/java/com/springexercises/partb/lazyinitdi)**)**\
   Shows how lazy loading works in conjunction with dependency injection, all lazy
