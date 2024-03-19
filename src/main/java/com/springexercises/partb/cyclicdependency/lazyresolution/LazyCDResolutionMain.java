@@ -9,13 +9,9 @@ public class LazyCDResolutionMain {
         BeanA beanA = context.getBean("beanA", BeanA.class);
         BeanB beanB = context.getBean("beanB", BeanB.class);
 
-        Thread.sleep(5000);
+        Thread.sleep(3000);
 
         System.out.println(beanA.getBeanB());
         System.out.println(beanB.getBeanA());
     }
 }
-
-// TODO: AOP с реализацией интерфейса. Проверить будет ли метод,
-//  который есть в классе, но отсутствует в интерфейсе доступен
-//  через AOP.
