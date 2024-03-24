@@ -1,6 +1,5 @@
 TRUNCATE students, courses RESTART IDENTITY CASCADE;
 
-
 INSERT INTO courses (theme)
 VALUES ('Architecture'),
        ('Computer and Information Sciences'),
@@ -73,3 +72,10 @@ FROM books;
 
 SELECT *
 FROM enrollments;
+
+--students with courses
+SELECT s.id, s.first_name, s.last_name, c.id, c.theme
+FROM students s
+         JOIN enrollments e ON s.id = e.student_id
+         JOIN courses c ON e.course_id = c.id
+ORDER BY s.id, c.id;

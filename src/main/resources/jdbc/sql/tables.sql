@@ -22,11 +22,12 @@ CREATE TABLE courses
 
 CREATE TABLE enrollments
 (
+    id              SERIAL PRIMARY KEY,
     student_id      INT NOT NULL,
     course_id       INT NOT NULL,
     enrollment_date TIMESTAMP WITH TIME ZONE,
 
-    PRIMARY KEY (student_id, course_id),
+    UNIQUE (student_id, course_id),
     FOREIGN KEY (student_id) REFERENCES students (id),
     FOREIGN KEY (course_id) REFERENCES courses (id)
 );

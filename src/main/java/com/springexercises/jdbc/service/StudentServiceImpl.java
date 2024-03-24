@@ -4,6 +4,8 @@ import com.springexercises.jdbc.model.Student;
 import com.springexercises.jdbc.repository.StudentRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class StudentServiceImpl implements StudentService {
     private final StudentRepository repository;
@@ -18,8 +20,8 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public Student findStudent(int id) {
-        return repository.findById(id).orElse(new Student());
+    public Optional<Student> findStudent(int id) {
+        return repository.findById(id);
     }
 
     @Override
