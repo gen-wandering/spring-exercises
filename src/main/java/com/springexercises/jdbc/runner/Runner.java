@@ -1,6 +1,7 @@
 package com.springexercises.jdbc.runner;
 
 import com.springexercises.jdbc.service.EnrollmentService;
+import com.springexercises.jdbc.service.StudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -8,11 +9,12 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 public class Runner implements CommandLineRunner {
+    private final StudentService studentService;
     private final EnrollmentService enrollmentService;
 
     @Override
     public void run(String... args) {
-        enrollExpelExample();
+        System.out.println(studentService.findStudent(12));
     }
 
     private void enrollExpelExample() {
