@@ -42,3 +42,11 @@
 * **Validation aspect (**[`validationaspect`](src/main/java/com/springexercises/aop/validationaspect)**)**\
   Implementation of a validation aspect using Spring AOP. Aspect intercepts method
   call and validates input parameters against predefined rules. 
+
+## Spring Data JDBC
+
+* **Spring Data JDBC with logging (**[`jdbc`](src/main/java/com/springexercises/jdbc)**)**\
+  Demonstration of CRUD operations using Spring Data JDBC for one-to-many and 
+  many-to-many relationships with custom database queries. The implementation 
+  uses aspect-oriented logging at various levels via SLF4J and AspectJ depending 
+  on the profile.<br/><br/>
