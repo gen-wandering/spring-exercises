@@ -11,4 +11,6 @@ public interface EnrollmentService {
     Iterable<Course> getStudentCourses(int studentId);
 
     Iterable<Student> getCourseStudents(int courseId);
+
+    void saveStudentAndCourse(Student student, Course course);
 }

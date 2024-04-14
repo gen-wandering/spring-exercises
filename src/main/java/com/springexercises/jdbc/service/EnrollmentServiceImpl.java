@@ -5,11 +5,13 @@ import com.springexercises.jdbc.model.Enrollment;
 import com.springexercises.jdbc.model.Student;
 import com.springexercises.jdbc.repository.EnrollmentRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.Optional;
 
 @Service
+@Transactional
 public class EnrollmentServiceImpl implements EnrollmentService {
     private final StudentService studentService;
     private final CourseService courseService;
@@ -57,5 +59,10 @@ public class EnrollmentServiceImpl implements EnrollmentService {
     @Override
     public Iterable<Student> getCourseStudents(int courseId) {
         return enrollmentRepository.getCourseStudents(courseId);
+    }
+
+    public void saveStudentAndCourse(Student student, Course course) {
+        studentService.saveStudent(student);
+        courseService.saveCourse(course);
     }
 }

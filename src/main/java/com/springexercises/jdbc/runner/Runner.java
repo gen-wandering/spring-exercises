@@ -1,5 +1,7 @@
 package com.springexercises.jdbc.runner;
 
+import com.springexercises.jdbc.model.Course;
+import com.springexercises.jdbc.model.Student;
 import com.springexercises.jdbc.service.EnrollmentService;
 import com.springexercises.jdbc.service.StudentService;
 import lombok.RequiredArgsConstructor;
@@ -14,7 +16,13 @@ public class Runner implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        System.out.println(studentService.findStudent(12));
+//        System.out.println(studentService.findStudent(12));
+//        enrollExpelExample();
+
+        enrollmentService.saveStudentAndCourse(
+                new Student("1", "1", "1", 1),
+                new Course("test")
+        );
     }
 
     private void enrollExpelExample() {
