@@ -49,4 +49,10 @@
   Demonstration of CRUD operations using Spring Data JDBC for one-to-many and 
   many-to-many relationships with custom database queries. The implementation 
   uses aspect-oriented logging at various levels via SLF4J and AspectJ depending 
-  on the profile.<br/><br/>
+  on the profile.
+
+## Validation
+
+* **Form data validation and binding (**[`validation`](src/main/java/com/springexercises/validation)**)**\
+  Demonstration of form data validation with custom validation annotations 
+  and type conversion using `@InitBinder`.
