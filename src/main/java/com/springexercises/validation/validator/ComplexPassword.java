@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
 @Constraint(validatedBy = ComplexPasswordValidator.class)
 public @interface ComplexPassword {
 
-    String message() default "Invalid password";
+    String message() default "Пароль должен иметь длину не менее 8 символов и содержать хотя бы одну заглавную букву, одну строчную букву, одну цифру и один специальный символ";
 
     Class<?>[] groups() default {};
 

@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Controller
 @RequestMapping("api/users")
 public class UserProfileController {
@@ -24,13 +27,11 @@ public class UserProfileController {
                                @Validated @ModelAttribute("user") UserProfile userProfile,
                                BindingResult bindingResult) {
 
-        System.out.println(userProfile);
-
         if (bindingResult.hasErrors()) {
-            StringBuilder errors = new StringBuilder();
-            bindingResult.getAllErrors().forEach(error -> errors.append(error.getDefaultMessage()).append("\n"));
-            System.out.println(errors);
-            model.addAttribute("errors", errors.toString());
+            Map<String, String> errors = new HashMap<>();
+            bindingResult.getFieldErrors().forEach(error -> errors.put(error.getField(), error.getDefaultMessage()));
+
+            model.addAttribute("errors", errors);
             model.addAttribute("user", userProfile);
             return "user/retry";
         }
