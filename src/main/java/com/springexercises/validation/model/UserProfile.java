@@ -6,13 +6,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserProfile {
     @NotBlank
-    @Size(min = 5, max = 20)
-    @Pattern(regexp = "^[a-zA-Z0-9]*$")
+    @Pattern(regexp = "^[a-zA-Z0-9]{5,20}$")
     private String username;
 
     @NotBlank
@@ -25,4 +26,6 @@ public class UserProfile {
 
     @Min(1)
     private int age;
+
+    private LocalDate dateOfBirth;
 }

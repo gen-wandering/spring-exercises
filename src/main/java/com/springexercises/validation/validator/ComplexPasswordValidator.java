@@ -11,7 +11,7 @@ public class ComplexPasswordValidator implements ConstraintValidator<ComplexPass
             return false;
         }
 
-        String passwordRegex = "^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[^A-Za-z0-9]).{8,}$";
+        String passwordRegex = "^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[^A-Za-z0-9]).{8,45}$";
         return password.matches(passwordRegex);
     }
 }
