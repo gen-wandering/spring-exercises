@@ -12,4 +12,14 @@ public class AppConfig {
         messageService.setMessage("Message from AppConfig.java configuration file");
         return messageService;
     }
+
+    @Bean
+    public Email email() {
+        return new Email(messageService());
+    }
+
+    @Bean
+    public Phone phone(MessageService messageService) {
+        return new Phone(messageService);
+    }
 }

@@ -8,10 +8,23 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 public class BeanConfigMain {
     public static void main(String[] args) {
 
-        BeanFactory beanFactory = mixConfig();
+        javaConfigExample(javaConfig());
+    }
 
+    // Java-based configuration usage example
+    private static void javaConfigExample(BeanFactory beanFactory) {
         MessageService messageService = beanFactory.getBean("messageService", MessageService.class);
-        System.out.println(messageService.getMessage());
+        Email email = beanFactory.getBean("email", Email.class);
+        Phone phone = beanFactory.getBean("phone", Phone.class);
+
+        System.out.println(messageService);
+        System.out.println(email.getMessageService());
+        System.out.println(phone.getMessageService());
+
+        if (messageService == email.getMessageService())
+            if (messageService == phone.getMessageService())
+                if (email.getMessageService() == phone.getMessageService())
+                    System.out.println("Single bean of MessageService");
     }
 
     // ClassPathXmlApplicationContext to load the XML-based configuration
