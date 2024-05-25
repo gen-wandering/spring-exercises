@@ -1,4 +1,4 @@
-# SpringExercises
+# Spring Exercises
 
 ## Spring Core
 
